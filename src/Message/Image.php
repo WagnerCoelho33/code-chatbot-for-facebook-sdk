@@ -2,15 +2,14 @@
 
 namespace CodeBot\Message;
 
-class Text implements Message
+class Image implements Message
 {
     private $recipienteId;
 
     public function __construct(string $recipienteId)
     {
-        $this->recipienteId = $recipienteId;
+        $this->recipientId = $recipienteId;
     }
-
     public function message(string $messageText) :array
     {
         return [
@@ -18,8 +17,12 @@ class Text implements Message
                 'id'=>$this->recipienteId
             ],
             'message' => [
-                'text' => '$messageText',
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'image',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
             ]
 
         ];
