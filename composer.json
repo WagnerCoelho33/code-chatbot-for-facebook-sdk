@@ -9,8 +9,10 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "phpunit/phpunit": "^7.5"
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
     },
     "autoload": {
         "psr-4": {
