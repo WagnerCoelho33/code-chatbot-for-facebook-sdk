@@ -14,11 +14,11 @@ class Text implements Message
     public function message(string $messageText) :array
     {
         return [
-            'recipient' => [
-                'id'=>$this->recipienteId
+            'recipient'  => [
+                'id'     =>$this->recipienteId
             ],
             'message' => [
-                'text' => '$messageText',
+                'text'     => $messageText,
                 'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
 

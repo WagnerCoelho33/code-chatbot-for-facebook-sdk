@@ -10,7 +10,7 @@ class TextTest extends TestCase
     {
         $actual = (new Text(1))->message('Hello');
         $expected = [
-            'recipient' => [
+            'recipient'  => [
                 'id'     =>1
             ],
             'message' => [
