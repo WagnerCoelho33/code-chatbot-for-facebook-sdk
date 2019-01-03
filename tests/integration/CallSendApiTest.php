@@ -9,6 +9,6 @@ class CallSendApiTest extends TestCase
     public function testMakeRequest()
     {
         $message = (new Text(1))->message('Hello');
-        (new CallSendApi( pageAccessToken "213f1"))->make(message);
+        //(new CallSendApi( pageAccessToken "213f1"))->make(message);
     }
 }
