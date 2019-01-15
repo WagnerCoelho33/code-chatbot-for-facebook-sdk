@@ -2,6 +2,8 @@
 
 namespace CodeBot;
 
+use GuzzleHttp\Client;
+
 class CallSendApi
 {
     const URL = 'https://graph.facebook.com/v2.6/me/messages';
@@ -12,14 +14,14 @@ class CallSendApi
         $this->pageAccessToken = $pageAccessToken;
     }
 
-    public function make(array $message, string $url = null, $method = 'POST')
+    public function make(array $message, string $url = null, $method = 'POST') :string
     {
         $client = new Client;
         $url = $url ?? CallSendApi::URL;
 
         $response = $client->request($method, $url, [
             'json' => $message,
-            'query' =>['access_token' => $this->pageAccessToke]
+            'query' => ['access_token' => $this->pageAccessToken]
         ]);
         
         return (string)$response->getBody();

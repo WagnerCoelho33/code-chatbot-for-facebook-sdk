@@ -8,7 +8,7 @@ class TextTest extends TestCase
 {
     public function testReturnArray()
     {
-        $actual = (new Text(1))->message('Hello');
+        $actual = (new Text(1))->message('Oiii');
         $expected = [
             'recipient'  => [
                 'id'     =>1
