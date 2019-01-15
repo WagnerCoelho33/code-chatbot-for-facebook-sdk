@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a76a7557eb75c097a88d782b9dafc7e",
+    "content-hash": "a8ff0aa2c1d42a6ed2fb868de20f1185",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1672,7 +1672,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wagnercoelho33/code-chatbot-for-facebook-sdk": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
