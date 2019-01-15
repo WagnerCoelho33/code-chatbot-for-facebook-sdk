@@ -1,7 +1,7 @@
 <?php
 
 namespace CodeBot;
-use Code\Message\Text;
+use CodeBot\Message\Text;
 use PHPUnit\Framework\TestCase;
 
 class CallSendApiTest extends TestCase
