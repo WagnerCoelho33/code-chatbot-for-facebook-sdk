@@ -33,6 +33,6 @@ class SendRequest
         {
             $this->event['postback']['payload'];
         }
-        return $this->event['postback']?? null;
+        return $this->event['postback'];
     }
 }
