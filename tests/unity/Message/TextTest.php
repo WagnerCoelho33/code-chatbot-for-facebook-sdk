@@ -14,7 +14,7 @@ class TextTest extends TestCase
                 'id'     =>1
             ],
             'message' => [
-                'text'     => 'Hello',
+                'text'     => 'Oiii',
                 'metadata' => 'DEVELOPER_DEFINED_METADATA'
             ]
 
