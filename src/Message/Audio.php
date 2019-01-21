@@ -2,7 +2,7 @@
 
 namespace CodeBot\Message;
 
-class Video implements Message
+class Audio implements Message
 {
     private $recipienteId;
 
