@@ -4,18 +4,18 @@ namespace CodeBot\Message;
 
 class Text implements Message
 {
-    private $recipienteId;
+    private $recipientId;
 
-    public function __construct(string $recipienteId)
+    public function __construct(string $recipientId)
     {
-        $this->recipienteId = $recipienteId;
+        $this->recipientId = $recipientId;
     }
 
     public function message(string $messageText) :array
     {
         return [
             'recipient'  => [
-                'id'     =>$this->recipienteId
+                'id'     =>$this->recipientId
             ],
             'message' => [
                 'text'     => $messageText,

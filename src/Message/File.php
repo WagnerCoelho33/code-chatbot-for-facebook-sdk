@@ -4,17 +4,17 @@ namespace CodeBot\Message;
 
 class File implements Message
 {
-    private $recipienteId;
+    private $recipientId;
 
-    public function __construct(string $recipienteId)
+    public function __construct(string $recipientId)
     {
-        $this->recipientId = $recipienteId;
+        $this->recipientId = $recipientId;
     }
     public function message(string $messageText) :array
     {
         return [
             'recipient' => [
-                'id'=>$this->recipienteId
+                'id'=>$this->recipientId
             ],
             'message' => [
                 'attachment' => [
