@@ -11,8 +11,7 @@
     ],
     "require": {
         "php": ">=7.2",
-        "guzzlehttp/guzzle": "^6.3",
-        "wagnercoelho33/code-chatbot-for-facebook-sdk": "dev-master"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.7"
