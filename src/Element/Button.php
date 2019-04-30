@@ -11,8 +11,8 @@ class Button implements ElementInterface
 
     public function __construct(string $type, ? string $title = null, ? string $value = null, array $config = [])
     {
-        $this->type = $type;
         $this->title = $title;
+        $this->type = $type;        
         $this->value = $value;
         $this->config = $config;
     }
