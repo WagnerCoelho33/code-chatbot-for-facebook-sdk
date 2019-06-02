@@ -30,7 +30,7 @@ class Button implements ElementInterface
         if ($this->type === 'web_url') {
             $data['url'] = $this->value;
         }
-        //serve para responder usuario
+        //chamadas internas dentro facebook
         if ($this->type === 'postback' or $this === 'phone_number') {
             $data['payload'] = $this->value;
         }
