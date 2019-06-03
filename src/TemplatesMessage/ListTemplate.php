@@ -68,15 +68,7 @@ class ListTemplate implements TemplateInterface
 
     public function message(string $messageText) :array
     {
-        if ($this->orderInfo !== null) {
-            throw new \Exception('orderInfo is required');
-        }
-        
-        if ($this->summary !== null) {
-            throw new \Exception('summary is required');
-        }
-        
-        $result = [
+        return [
             'recipient' => [
                 'id' => $this->recipientId 
             ],
@@ -84,30 +76,13 @@ class ListTemplate implements TemplateInterface
                 'attachment' => [
                     'type' => 'template',
                     'payload' => [
-                        'template_type' => 'receipt',
-                        'text' => $messageText,
-                        'recipient_name' =>$this->orderInfo['recipient_name'],
-                        'order_number' =>$this->orderInfo['order_number'],
-                        'currency' =>$this->orderInfo['currency'],
-                        'payment_method' =>$this->orderInfo['payment_method'],
-                        'order_url' =>$this->orderInfo['order_url'],
-                        'timestamp' =>$this->orderInfo['timestamp'],
-                        'elements' => $this->products,
-                        'summary' => $this->summary,
+                        'template_type' => 'list',
+                        'buttons' => $this->products
                     ]
                 ]
             ]
         ];
 
-        if ($this->address !==null) {
-            $result['message'] ['attachment'] ['payload'] ['address'] = $this->address;
-        }
-
-        if ($this->adjustments !==null) {
-            $result['message'] ['attachment'] ['payload'] ['address'] = $this->address;
-        }
-
-        return $result;
     }
 
 }
