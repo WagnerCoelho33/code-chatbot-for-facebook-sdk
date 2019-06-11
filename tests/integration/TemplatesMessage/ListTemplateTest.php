@@ -2,9 +2,9 @@
 
 namespace CodeBot\TemplatesMessage;
 
-use PHPUnit\Framework\TestCase;
 use CodeBot\Element\Button;
 use CodeBot\Element\Product;
+use PHPUnit\Framework\TestCase;
 
 class ListTemplateTest extends TestCase
 {
