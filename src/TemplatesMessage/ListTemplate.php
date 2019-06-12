@@ -77,7 +77,7 @@ class ListTemplate implements TemplateInterface
                     'type' => 'template',
                     'payload' => [
                         'template_type' => 'list',
-                        'buttons' => $this->buttons
+                        'elements' => $this->buttons
                     ]
                 ]
             ]
