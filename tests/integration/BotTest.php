@@ -5,7 +5,6 @@ use CodeBot\Build\Solid;
 class BotTest extends TestCase
 {
     private $pageAccesstoken = 'EAAFyZCCO5dmoBACbiDCZCRjc4ZBZCj6HzqW1rdT0WZBsdZCUHbfqsAQieCitQQLCwv9uOrsjU1ZAnRBADnOeZBzkjr7ve37P55A2sZBcsHvEJbKaG0g5BQBKb4FYx9FfypmYX0C9dzYZAQZAIeSiijVvNoHlMPFtUgUoggDFAUthWH5HgZDZD';
-    
     public function testAddMenu()
     {
         $call_to_actions = [
